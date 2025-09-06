@@ -1,0 +1,39 @@
+{
+  "name": "scraping-linkedln",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "scrape": "node --watch --env-file=.secrets/.env index.js",
+    "getLinkedinLeads": "node --watch --env-file=.secrets/.env ./middleware/leads/scrapelinkedin.js",
+    "getFacebookLeads": "node --watch --env-file=.secrets/.env ./middleware/leads/scrapefb.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Khubaib567/Web-Scraping-Automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Khubaib567/Web-Scraping-Automation/issues"
+  },
+  "homepage": "https://github.com/Khubaib567/Web-Scraping-Automation#readme",
+  "dependencies": {
+    "axios": "^1.11.0",
+    "axios-cookiejar-support": "^6.0.4",
+    "cheerio": "^1.1.2",
+    "chrome-remote-interface": "^0.33.3",
+    "csv-parse": "^6.1.0",
+    "csv-parser": "^3.2.0",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "json2csv": "^6.0.0-alpha.2",
+    "node-fetch": "^3.3.2",
+    "nodemailer": "^7.0.5",
+    "prompt-sync": "^4.2.0",
+    "puppeteer": "^24.17.0",
+    "request": "^2.88.2",
+    "tough-cookie": "^6.0.0"
+  },
+  "description": ""
+}
